@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty Fan Page</title>
+  <link rel="icon" href="./assets/rick-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="./assets/splash-logo.png" alt="Rick and Morty Splash" />
+  </div>
+
+  <!-- Navbar superior con 6 pestañas -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#characters">Personajes</a></li>
+      <li><a href="#episodes">Episodios</a></li>
+      <li><a href="#favorites">Favoritos</a></li>
+      <li><a href="#register">Registro</a></li>
+      <li><a href="#about">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <!-- Buscador y Filtro -->
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Buscar personaje...">
+    <select id="filterSelect">
+      <option value="">Todos</option>
+      <option value="Alive">Vivo</option>
+      <option value="Dead">Muerto</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+  </section>
+
+  <!-- Listado de personajes -->
+  <main id="charactersList">
+    <!-- Los personajes se listarán aquí desde la API -->
+  </main>
+
+  <!-- Formulario de registro -->
+  <section id="register">
+    <h2>Registro</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Nombre" required />
+      <input type="text" placeholder="Apellido" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Contraseña" required />
+      <input type="text" placeholder="País" required />
+      <input type="date" placeholder="Fecha de nacimiento" required />
+      <input type="text" placeholder="Nombre de usuario" required />
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <!-- Menú inferior -->
+  <footer class="bottom-menu">
+    <button>Inicio</button>
+    <button>Buscar</button>
+    <button>Favoritos</button>
+    <button>Perfil</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
